@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+body {
+    font-family: 'Josefin Sans';
+    text-align: center;
+    background-color: #113479;
+    color: #ffd900;
+    margin: 150px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 400px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 48%;
+    padding: 60px auto;
+    text-align: center;
+    background-color: #ffd900;
+    color: #113479;
+    margin: 10px auto;
+    border-radius: 12px;
+    font-size: 90px;
+    font-family: "Exo 2";
+    font-weight: 700;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #113479;
+    color: #ffd900;
+    border: none;
+    cursor: pointer;
+    border: 2px solid #ffd900;
+    transition-duration: 0.4S;
+    margin: 8px;
+    font-size: 20px;
+    border-radius: 12px;
+    font-family: "Josefin Sans";
+}
+button:hover {
+    background-color: #ffd900;
+    border: none;
+    color: #113479;
+    font-family: "Josefin Sans";
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)
+}
+#timer {
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#alarm {
+    display: none;
+}
+h1 {
+    font-size: 45px;
+    font-weight: 900;
+}
+h2 {
+    font-size: 40px;
+    margin: 50px 10px;
+    text-align: center;
+}
+.air{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("wave.png");
+    background-size: 1000px 100px
+
+  }
+  .air.air1{
+    animation: wave 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  .air.air2{
+    animation: wave2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+  .air.air3{
+    animation: wave 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+  }
+  section .air.air4{
+    animation: wave2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+  }
+  @keyframes wave{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: 1000px; 
+    }
+  }
+  @keyframes wave2{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: -1000px; 
+    }
+  }
+  

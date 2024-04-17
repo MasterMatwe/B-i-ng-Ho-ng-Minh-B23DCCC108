@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy Tính</title>
+    <link rel="stylesheet" href="bai1.css">
+</head>
+<body>
+    <h1>Máy Tính</h1>
+    <div class="container">
+        <input type="text" id="inputA" placeholder="Nhập số A">
+        <input type="text" id="inputB" placeholder="Nhập số B">
+        <div class="buttons">
+            <button onclick="tinhToan('SUM')">Cộng</button>
+            <button onclick="tinhToan('SUBTRACT')">Trừ</button>
+            <button onclick="tinhToan('MULTIPLY')">Nhân</button>
+            <button onclick="tinhToan('DIVIDE')">Chia</button>
+            <button onclick="reset()">Làm mới</button>
+        </div>
+        <p id="result"></p>
+    </div>
+    <script src="bai1.js"></script>
+</body>
+</html>
